@@ -77,6 +77,10 @@ h1 {
   max-width: 32rem;
 }
 
+.phrase {
+  display: inline;
+}
+
 .note {
   font-size: 0.95rem;
   color: var(--gray);
@@ -90,5 +94,9 @@ h1 {
 
   .logo-wrap {
     padding: 16px;
+  }
+
+  .phrase {
+    display: block;
   }
 }
