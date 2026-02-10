@@ -72,12 +72,15 @@ h1 {
 }
 
 .statement {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
   font-size: 1.1rem;
   max-width: 32rem;
 }
 
 .phrase {
-  display: inline;
+  display: block;
 }
 
 .note {
@@ -93,9 +96,5 @@ h1 {
 
   .logo-wrap {
     padding: 16px;
-  }
-
-  .phrase {
-    display: block;
   }
 }
