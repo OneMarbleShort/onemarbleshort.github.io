@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap");
+
+:root {
+  color-scheme: light;
+  --black: #0a0a0a;
+  --white: #f6f6f6;
+  --gray: #b7b7b7;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--white);
+  color: var(--black);
+  min-height: 100vh;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+}
+
+.card {
+  width: min(960px, 100%);
+  display: grid;
+  grid-template-columns: minmax(220px, 280px) minmax(0, 1fr);
+  gap: 40px;
+  align-items: center;
+  padding: 48px;
+  border: 1px solid var(--black);
+  background: #ffffff;
+}
+
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--black);
+  padding: 24px;
+}
+
+.logo-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: grayscale(100%);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.85rem;
+  color: var(--gray);
+}
+
+h1 {
+  font-size: clamp(2rem, 3vw, 3.25rem);
+  line-height: 1.1;
+}
+
+.statement {
+  font-size: 1.1rem;
+  max-width: 32rem;
+}
+
+.note {
+  font-size: 0.95rem;
+  color: var(--gray);
+}
+
+@media (max-width: 768px) {
+  .card {
+    grid-template-columns: 1fr;
+    padding: 32px;
+  }
+
+  .logo-wrap {
+    padding: 16px;
+  }
+}
